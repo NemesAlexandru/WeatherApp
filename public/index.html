@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel = "stylesheet">
+    <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZqyfQUTjIm8ec9kwY118_cf71iSkfUL4&libraries=places"></script>
+    <script defer src="script.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class = "icon-container" data-icon>
+<canvas id="icon" width="100" height="100"></canvas>
+</div>
+        </div>
+        <div class="content">
+         <div class="general-information">
+            <!-- <div cass="weather-icon" data-icon></div> -->
+             <div class="status" data-status>Enter a Location</div>
+             <div class="location" data-location>To find the Weather</div>
+         </div>
+         <div class="detail-section">
+             <div class="detail">
+                 <div class="title">Wind</div>
+                    <div class="value" data-wind>TBD</div>
+             </div>
+             <div class="detail bordered">
+                <div class="title">Temperature</div>
+                   <div class="value" data-temperature>TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title">Feels like</div>
+                   <div class="value" data-feelslike>TBD</div>
+            </div>
+         </div>
+         <div class="city-search-container">
+             <input type="text" class="city-search" data-city-search placeholder="Enter Location">
+         </div>
+        </div>
+    </div>
+  
+</body>
+</html>

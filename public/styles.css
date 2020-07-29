@@ -1,0 +1,114 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+}
+
+body {
+background: rgb(38, 194, 181);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+}
+
+.container {
+    max-width: 30%;
+    width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px #3D3D3D;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.header {
+    background-color: #33b49f;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.icon-container {
+    position: relative;
+    top: 30px;
+    padding: 17px;
+    background-color:#33b49f;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px black
+}
+
+.general-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.status {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.detail-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.detail.bordered {
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+
+.detail .title {
+    font-size: 2 rem;
+    flex-grow: 1;
+    font-weight: bold;
+    color: #717372;
+}
+
+.detail .value {
+    font-size: 2 rem;
+    margin-top: 20px;
+}
+
+.city-search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.city-search {
+    margin-top: 40px;
+    font-size: 2 rem;
+    outline: none;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 40%;
+}
+
