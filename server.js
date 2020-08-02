@@ -14,17 +14,12 @@ app.use(express.static('public'));
 
 app.post('/weather', (req, res) => {
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${req.body.latitude}&lon=${req.body.longitude}&appid=${OPENWEATHER_API_KEY}&units=metric`;
-
 axios({
     url: url,
     responseType: 'json'
 }).then(data => res.json(data.data));
-
-// request(url, (error, response, body) => {
-//     console.log(body);
-// });
-
 });
+
 
 const PORT = process.env.PORT || 3000
 
